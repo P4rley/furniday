@@ -1,5 +1,8 @@
+"use client";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { AnimatePresence } from "framer-motion";
 
 export const metadata = {
   title: "Furniday",
@@ -16,10 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <AnimatePresence mode="wait">
+        <body>
+          <Navbar />
+          {children}
+        </body>
+      </AnimatePresence>
     </html>
   );
 }

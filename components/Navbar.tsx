@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
 
         <ul className=" gap-3 hidden md:flex">
           <li
-            className={`font-medium text-base relative ${
+            className={`font-semibold text-base relative ${
               pathname === `/` ? "text-[#222] active-link" : "text-[#717171]"
             }  hover:text-[#222] transition duration-300 ease-in-out`}
           >
@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
             return (
               <li
                 key={i}
-                className={`font-medium text-base ${
+                className={`font-semibold text-base ${
                   pathname === `/${link.toLowerCase()}`
                     ? "text-[#222]  active-link"
                     : "text-[#717171]"
@@ -47,7 +47,9 @@ const Navbar = (props: Props) => {
 
         <div className="gap-3 items-center hidden md:flex">
           <FaSearch fontSize={18} color={"#222"} className="cursor-pointer" />
-          <div className="w-[2px] rounded-lg h-full bg-[#222]" />
+
+          <div className="w-[2px] rounded-lg h-[30px] bg-[#222]" />
+
           <div className="flex items-center gap-2">
             <FaChair fontSize={18} color={"#222"} className="cursor-pointer" />
             <span className="text-[#222] text-sm font-normal">0</span>
