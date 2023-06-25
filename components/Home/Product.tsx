@@ -5,7 +5,7 @@ import Card from "../Card";
 type Props = {};
 const Product = (props: Props) => {
   return (
-    <div className="min-h-screen relative my-[4rem]">
+    <div className="relative my-[4rem]">
       <div className="px-[10%] md:px-[4rem] lg:px-[8rem]">
         <h1 className="text-3xl md:text-4xl lg:text-6xl mb-10">
           Our Top Products
