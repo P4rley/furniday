@@ -1,5 +1,6 @@
 "use client";
 
+import AboutHome from "@/components/Home/AboutHome";
 import Hero from "@/components/Home/Hero";
 import Product from "@/components/Home/Product";
 import ShopByRoom from "@/components/Home/ShopByRoom";
@@ -18,6 +19,7 @@ export default function Home() {
       <Product />
       <Trending />
       <ShopByRoom />
+      <AboutHome />
     </motion.main>
   );
 }
