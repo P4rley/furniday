@@ -2,6 +2,7 @@
 
 import Hero from "@/components/Home/Hero";
 import Product from "@/components/Home/Product";
+import ShopByRoom from "@/components/Home/ShopByRoom";
 import Trending from "@/components/Home/Trending";
 import { motion } from "framer-motion";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Product />
       <Trending />
+      <ShopByRoom />
     </motion.main>
   );
 }

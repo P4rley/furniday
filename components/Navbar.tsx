@@ -56,9 +56,9 @@ const Navbar = (props: Props) => {
           </div>
         </div>
 
-        <div className="md:hidden z-10">
+        <div className="md:hidden z-20">
           <div
-            className="w-[50px] h-[50px] bg-[#222] rounded-full flex items-center justify-center "
+            className="w-[50px] fixed top-[12px] right-[10%] h-[50px] bg-[#222] rounded-full flex items-center justify-center "
             onClick={() => setOpen(!open)}
           >
             {open ? (
@@ -71,7 +71,7 @@ const Navbar = (props: Props) => {
       </div>
 
       <div
-        className={`w-full fixed top-0 left-0 right-0 bottom-0 h-screen bg-[#8f8f8f] ${
+        className={`w-full z-10 fixed top-0 left-0 right-0 bottom-0 h-screen  bg-[#8f8f8f] ${
           open
             ? "translate-x-0 transition ease-in-out duration-500"
             : "translate-x-[100%] transition ease-in-out duration-500 delay-200"
@@ -79,7 +79,7 @@ const Navbar = (props: Props) => {
       ></div>
 
       <div
-        className={`w-full fixed top-0 left-0 right-0 bottom-0 h-screen bg-[#222] ${
+        className={`w-full z-10 fixed top-0 left-0 right-0 bottom-0 h-screen  bg-[#222] ${
           open
             ? "translate-x-0 transition ease-out duration-500 delay-200"
             : "translate-x-[100%] transition ease-out duration-500"

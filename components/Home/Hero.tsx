@@ -5,7 +5,7 @@ import heroImg from "../../app/heroImg.jpg";
 type Props = {};
 const Hero = (props: Props) => {
   return (
-    <div className="relative h-[90vh]">
+    <div className="h-[90vh]">
       <div className="px-[10%] md:px-[4rem] lg:px-[8rem]">
         <h1 className="text-3xl md:text-4xl lg:text-6xl mb-5 py-7 border-b-2 border-[#222]">
           FURNITURE FOR YOUR DAY.
