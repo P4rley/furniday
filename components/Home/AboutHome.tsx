@@ -7,7 +7,7 @@ const AboutHome = (props: Props) => {
   return (
     <div className="w-full relative h-screen">
       <div className="px-[10%] justify-center flex flex-col h-full md:px-[4rem] lg:px-[8rem]">
-        <h1 className="text-7xl md:text-9xl font-bold text-[#222] max-w-[250px]">
+        <h1 className="text-6xl md:text-9xl font-bold text-[#222] max-w-[250px]">
           Furniture Within Reach
         </h1>
         <Link href="/about">
