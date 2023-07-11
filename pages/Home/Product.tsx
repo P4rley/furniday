@@ -1,6 +1,6 @@
 import Image from "next/image";
 import img from "../../app/heroImg.jpg";
-import Card from "../Card";
+import Card from "../../components/Card";
 
 type Props = {};
 const Product = (props: Props) => {

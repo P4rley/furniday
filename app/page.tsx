@@ -1,10 +1,10 @@
 "use client";
 
-import AboutHome from "@/components/Home/AboutHome";
-import Hero from "@/components/Home/Hero";
-import Product from "@/components/Home/Product";
-import ShopByRoom from "@/components/Home/ShopByRoom";
-import Trending from "@/components/Home/Trending";
+import AboutHome from "@/pages/Home/AboutHome";
+import Hero from "@/pages/Home/Hero";
+import Product from "@/pages/Home/Product";
+import ShopByRoom from "@/pages/Home/ShopByRoom";
+import Trending from "@/pages/Home/Trending";
 import { motion } from "framer-motion";
 
 export default function Home() {

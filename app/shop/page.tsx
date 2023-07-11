@@ -1,5 +1,5 @@
 type Props = {};
-const Shop = (props: Props) => {
-  return <div>Shop</div>;
+const page = (props: Props) => {
+  return <div>page</div>;
 };
-export default Shop;
+export default page;

@@ -34,12 +34,12 @@ const Navbar = (props: Props) => {
               <li
                 key={i}
                 className={`font-semibold text-base ${
-                  pathname === `/${link.toLowerCase()}`
+                  pathname?.split("/").includes(link.toLowerCase())
                     ? "text-[#222]  active-link"
                     : "text-[#717171]"
                 }  hover:text-[#222] relative transition duration-300 ease-in-out`}
               >
-                <Link href={link.toLowerCase()}>{link}</Link>
+                <Link href={`/${link.toLowerCase()}`}>{link}</Link>
               </li>
             );
           })}
