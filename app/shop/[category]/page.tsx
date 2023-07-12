@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import heroImg from "../../heroImg.jpg";
-import Card from "@/components/Card";
 import { useState } from "react";
 
 type Props = {

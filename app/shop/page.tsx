@@ -1,6 +1,7 @@
 "use client";
 
-import Card from "@/components/Card";
+import Image from "next/image";
+import img from "../heroImg.jpg";
 import { useState } from "react";
 
 type Props = {};
@@ -9,9 +10,24 @@ const Shop = (props: Props) => {
 
   return (
     <div className="my-10">
-      <div className="flex flex-wrap justify-between items-center gap-10">
+      <div className="flex flex-wrap justify-between items-center gap-5">
         {[...Array(expand)].map((el, i) => {
-          return <Card key={i} width="w-full" />;
+          return (
+            <div
+              key={i}
+              className={`shadow-lg group h-[200px] w-full md:w-[200px] lg:w-[240px] xl:w-[275px] lg:h-[250px] rounded-md overflow-hidden`}
+            >
+              <Image
+                src={img}
+                alt="products"
+                className="h-[150px] lg:h-[200px] w-full object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+              />
+              <div className="flex w-full justify-between py-4 px-2">
+                <span className="text-xs font-medium">Chair</span>
+                <span className="text-xs font-medium">IDR 300,000</span>
+              </div>
+            </div>
+          );
         })}
       </div>
 
