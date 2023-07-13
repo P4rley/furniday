@@ -1,5 +1,6 @@
 import Image from "next/image";
 import img from "../heroImg.jpg";
+import { motion } from "framer-motion";
 
 type Props = {};
 const About = (props: Props) => {

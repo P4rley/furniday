@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { FaSearch, FaChair } from "react-icons/fa";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
