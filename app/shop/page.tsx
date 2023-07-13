@@ -4,14 +4,50 @@ import Image from "next/image";
 import img from "../heroImg.jpg";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { shopLinks } from "@/public/data";
 
 type Props = {};
 const Shop = (props: Props) => {
   const [expand, setExpand] = useState<number>(16);
+  const pathname = usePathname();
 
   return (
     <div className="my-10">
-      <div className="flex flex-wrap justify-between items-center gap-5">
+      <div>
+        <h1 className="font-bold text-4xl flex text-center justify-center items-center my-6">
+          BEAUTIFUL FURNITURE
+        </h1>
+
+        <div className="border-y-[1px] border-[#222] py-3">
+          <ul className="flex flex-row items-center flex-wrap text-center justify-center gap-5">
+            <li
+              className={`relative ${
+                pathname === `/shop`
+                  ? "text-[#222] active-link"
+                  : "text-[#717171]"
+              }  hover:text-[#222] transition duration-300 ease-in-out`}
+            >
+              <Link href="/shop">New Arrival</Link>
+            </li>
+            {shopLinks.map((link) => {
+              return (
+                <li
+                  key={link.id}
+                  className={`${
+                    pathname?.split("/").includes(link.pathname)
+                      ? "text-[#222] active-link"
+                      : "text-[#717171]"
+                  } hover:text-[#222] relative transition duration-300 ease-in-out`}
+                >
+                  <Link href={`/shop/${link.pathname}`}>{link.category}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-between items-center gap-5 mt-10">
         {[...Array(expand)].map((el, i) => {
           return (
             <Link href={`/shop/chair/1`} key={i}>
