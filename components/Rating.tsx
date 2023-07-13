@@ -6,7 +6,7 @@ type Props = {};
 const Rating = ({}: Props) => {
   const [rating, setRating] = useState<number>(0);
   return (
-    <div className="flex gap-1">
+    <div className="flex items-center gap-1">
       <div>
         {[...Array(5)].map((star, index) => {
           index += 1;
@@ -18,14 +18,14 @@ const Rating = ({}: Props) => {
               onClick={() => setRating(index)}
               onMouseOver={() => setRating(index)}
             >
-              <span className="border-none bg-transparent outline-none">
+              <span className="text-xs lg:text-base border-none bg-transparent outline-none">
                 &#9733;
               </span>
             </button>
           );
         })}
       </div>
-      <p>({rating})</p>
+      <p className="text-xs lg:text-base">({rating})</p>
     </div>
   );
 };
