@@ -18,7 +18,10 @@ const AboutHome = (props: Props) => {
       </div>
 
       <Image
-        src={img}
+        src={"https://utfs.io/f/51df6010-637c-4f2a-a985-ff33037eeef3_lamp.jpg"}
+        width={0}
+        height={0}
+        sizes="100vw"
         alt="about home background"
         className="w-full absolute -z-10 top-0 right-0 left-0 bottom-0 h-full object-cover"
         priority
